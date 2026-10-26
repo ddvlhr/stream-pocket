@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>拾流</title><link rel="stylesheet" href="style.css"></head>
+<body class="popup">
+  <main>
+    <div class="popup-toolbar">
+      <nav class="filters" aria-label="媒体筛选"><button data-filter="all" class="selected" aria-pressed="true">全部</button><button data-filter="video" aria-pressed="false">视频</button><button data-filter="hls" aria-pressed="false">HLS</button><button data-filter="audio" aria-pressed="false">音频</button><button data-filter="dash" aria-pressed="false">DASH</button></nav>
+      <div class="toolbar-actions"><button id="settingsToggle" class="text-button" aria-expanded="false" aria-controls="settingsPanel" title="偏好设置"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 17h16"/><rect x="7" y="4" width="4" height="6" rx="1.5" fill="var(--canvas)"/><rect x="14" y="14" width="4" height="6" rx="1.5" fill="var(--canvas)"/></svg>设置</button><button id="aboutToggle" class="text-button" aria-expanded="false" aria-controls="aboutPanel" title="关于拾流">关于</button></div>
+    </div>
+    <section id="aboutPanel" class="settings about-panel" hidden>
+      <div class="brand"><span class="logo">↓</span><div><h1>拾流 <small>STREAM POCKET</small></h1><p>让喜欢的视频，留在本地。</p></div></div>
+      <p id="version" class="muted"></p>
+      <div class="about-page"><span class="eyebrow">当前页面</span><p id="pageTitle">正在读取…</p><span>发现媒体：<strong id="count">0</strong></span></div>
+      <p class="muted">所有处理均在本机完成，无需账号。支持直链与未加密 HLS 点播下载。</p>
+    </section>
+    <section id="settingsPanel" class="settings" hidden>
+      <h2>偏好设置</h2>
+      <label class="check"><input id="enabled" type="checkbox">自动发现媒体</label>
+      <label class="check"><input id="saveAs" type="checkbox">下载前选择保存位置</label>
+      <div class="fields"><label>最小文件大小（MB）<input id="minSizeMB" type="number" min="0" max="100000" step="0.1"></label><label>下载子目录<input id="folder" maxlength="60" placeholder="StreamPocket"></label></div>
+      <label>忽略的域名（每行一个）<textarea id="blockedHosts" rows="2" placeholder="example.com"></textarea></label>
+      <button id="saveSettings" class="primary">保存设置</button>
+      <p class="muted">未知大小的媒体仍会显示。数据仅保存在本机。</p>
+    </section>
+    <div class="list-heading"><span id="listLabel">发现的媒体</span><div><button id="scan" class="text-button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10a8 8 0 1 0-2 7M20 4v6h-6"/></svg>重新扫描</button><button id="clear" class="text-button muted">清空</button></div></div>
+    <section id="mediaList" class="media-list" aria-live="polite"></section>
+    <section id="empty" class="empty" hidden><div class="empty-icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="5" width="22" height="22" rx="6"/><path d="m13 11 8 5-8 5z"/></svg></div><h2>等待一个好视频</h2><p id="emptyText">先在网页中播放视频，拾流会自动发现它。<br>也可以点击「重新扫描」。</p></section>
+    <p id="status" class="status" role="status"></p>
+  </main>
+  <footer><span class="local-label">本地处理 · 无需账号</span><button id="downloads" class="text-button">下载记录<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></button></footer>
+  <script type="module" src="popup.js"></script>
+</body></html>

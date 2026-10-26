@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "拾流 · Stream Pocket",
+  "version": "0.2.1",
+  "description": "发现网页媒体，下载直链视频与未加密 HLS 点播。所有处理均在本地完成。",
+  "minimum_chrome_version": "120",
+  "icons": {"16": "icons/icon16.png", "32": "icons/icon32.png", "48": "icons/icon48.png", "128": "icons/icon128.png"},
+  "permissions": ["webRequest", "downloads", "storage", "activeTab"],
+  "host_permissions": ["http://*/*", "https://*/*"],
+  "background": {"service_worker": "background.js", "type": "module"},
+  "action": {"default_popup": "popup.html", "default_title": "拾流 · 发现网页视频", "default_icon": {"16": "icons/icon16.png", "32": "icons/icon32.png", "48": "icons/icon48.png"}},
+  "content_scripts": [{
+    "matches": ["http://*/*", "https://*/*"],
+    "js": ["content.js"],
+    "all_frames": true,
+    "run_at": "document_idle"
+  }],
+  "content_security_policy": {"extension_pages": "script-src 'self'; object-src 'self'"}
+}

@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>HLS 下载 · 拾流</title><link rel="stylesheet" href="style.css"></head>
+<body class="stream-page">
+  <header><div class="brand"><span class="logo">↓</span><div><h1>拾流 <small>STREAM POCKET</small></h1><p>把一段段精彩，收进一个文件。</p></div></div><span class="privacy-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 5 8 9 8 9s8-4 8-9V6zM8 12l3 3 5-6"/></svg>仅在本机处理</span></header>
+  <section class="workspace">
+    <div class="workspace-heading"><span class="eyebrow">HLS</span><span>视频下载 / 本地合并</span></div><h2 id="title">正在读取视频…</h2>
+    <div id="source" class="source-url"></div>
+    <label>选择清晰度<select id="quality" disabled><option>正在解析清单…</option></select></label>
+    <div class="download-progress">
+      <p id="status" class="status" role="status">正在连接媒体服务器…</p>
+      <progress id="progress" max="100" value="0" aria-label="下载进度"></progress>
+      <p id="outputName" class="source-url">将按弹窗中选择的名称和格式保存。</p>
+    </div>
+    <div class="actions"><button id="start" class="primary" disabled>下载并合并 ↓</button><button id="cancel" class="secondary" disabled>取消</button></div>
+  </section>
+  <aside class="workspace-notes" aria-label="下载说明">
+    <p><strong>下载完成前，请保持此页面打开。</strong>支持未加密、音画已复用的 HLS 点播。TS 可无损封装为 MP4（H.264 / AAC），不重新编码；其他编码请选择保留 TS。每次最多 512 MB / 6,000 个分片。</p>
+    <p>若服务器拒绝请求或链接已过期，请返回原网页重新播放并扫描。加密、DRM、直播、字节范围及音画分离流暂不支持。</p>
+  </aside>
+  <script type="module" src="stream.js"></script>
+</body></html>
