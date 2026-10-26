@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">第二步：将 ZIP 压缩包直接拖入扩展管理页</title>
+  <desc id="desc">从文件资源管理器拖动下载好的 stream-pocket-0.2.1.zip，放到已开启开发者模式的 chrome://extensions 页面内容区域，无需解压。此图为操作示意，并非真实浏览器截图。</desc>
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#22332f" flood-opacity=".07"/></filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M1 1 8 5 1 9" fill="none" stroke="#16846b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></marker>
+  </defs>
+  <rect width="1200" height="680" rx="20" fill="#f3f7f4"/>
+  <g font-family="Segoe UI,Microsoft YaHei,sans-serif">
+    <rect x="40" y="32" width="42" height="30" rx="9" fill="#16846b"/>
+    <text x="61" y="53" fill="white" font-size="16" font-weight="700" text-anchor="middle">02</text>
+    <text x="96" y="55" fill="#22332f" font-size="24" font-weight="650">拖入 ZIP，完成安装</text>
+    <text x="40" y="88" fill="#677d70" font-size="14">从文件资源管理器拖入压缩包即可，无需手动解压。</text>
+    <g filter="url(#shadow)">
+      <rect x="40" y="170" width="368" height="366" rx="14" fill="white" stroke="#dce5df"/>
+      <path d="M54 170h340a14 14 0 0 1 14 14v40H40v-40a14 14 0 0 1 14-14" fill="#e9eeea"/>
+      <path d="M63 190h14l5 5h22v17H63z" fill="#b5cbbd"/>
+      <text x="115" y="205" fill="#425c4b" font-size="14" font-weight="600">文件资源管理器</text>
+      <rect x="60" y="239" width="328" height="35" rx="7" fill="#f3f6f4"/>
+      <text x="77" y="262" fill="#647e6d" font-size="13">下载</text>
+      <rect x="60" y="297" width="328" height="122" rx="10" fill="#edf7f1" stroke="#16846b" stroke-width="2"/>
+      <path d="M82 321h28l12 13v55H82z" fill="white" stroke="#9abca7" stroke-width="1.5"/>
+      <path d="M110 321v14h12M99 322v43" fill="none" stroke="#9abca7" stroke-width="2" stroke-dasharray="3 3"/>
+      <text x="102" y="379" fill="#16846b" font-size="11" font-weight="700" text-anchor="middle">ZIP</text>
+      <text x="139" y="347" fill="#264b36" font-size="15" font-weight="600">stream-pocket-0.2.1.zip</text>
+      <text x="139" y="376" fill="#6e8b77" font-size="12">Release 中下载的扩展文件包</text>
+      <rect x="80" y="451" width="103" height="29" rx="14.5" fill="#e9f4ed"/>
+      <text x="131" y="471" fill="#16846b" font-size="12" font-weight="600" text-anchor="middle">无需解压</text>
+      <text x="60" y="511" fill="#82978a" font-size="11">请使用 Assets 中的 ZIP，而非 Source code。</text>
+    </g>
+    <g filter="url(#shadow)">
+      <rect x="455" y="125" width="705" height="461" rx="14" fill="white" stroke="#dce5df"/>
+      <path d="M469 125h677a14 14 0 0 1 14 14v42H455v-42a14 14 0 0 1 14-14" fill="#e9eeea"/>
+      <circle cx="478" cy="151" r="5" fill="#b9c7be"/><circle cx="495" cy="151" r="5" fill="#b9c7be"/><circle cx="512" cy="151" r="5" fill="#b9c7be"/>
+      <rect x="539" y="137" width="533" height="31" rx="15.5" fill="#f8faf8" stroke="#d4dfd7"/>
+      <text x="558" y="158" fill="#354e3f" font-family="Consolas,monospace" font-size="13">chrome://extensions</text>
+      <text x="481" y="217" fill="#344b3d" font-size="19" font-weight="600">扩展程序</text>
+      <text x="981" y="215" fill="#58745f" font-size="12">开发者模式</text>
+      <rect x="1073" y="199" width="46" height="22" rx="11" fill="#16846b"/><circle cx="1107" cy="210" r="8" fill="white"/>
+      <path d="M455 237h705" stroke="#e3e9e4"/>
+      <rect x="479" y="259" width="657" height="294" rx="14" fill="#f1f8f4" stroke="#94bfa4" stroke-width="2" stroke-dasharray="8 6"/>
+      <path d="M806 327v44m-14-14 14 14 14-14M785 383h42" fill="none" stroke="#16846b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="807" y="420" fill="#16846b" font-size="21" font-weight="600" text-anchor="middle">将 ZIP 拖到这里后松开</text>
+      <text x="807" y="451" fill="#789683" font-size="13" text-anchor="middle">拖入页面内容区域，浏览器会处理安装</text>
+      <rect x="672" y="480" width="270" height="33" rx="16.5" fill="white" stroke="#d5e7dc"/>
+      <text x="807" y="502" fill="#476b54" font-size="12" text-anchor="middle">安装后固定拾流，再刷新原网页</text>
+    </g>
+    <path d="M355 351c80 0 95-41 149-12 43 24 68 47 124 47" fill="none" stroke="#16846b" stroke-width="3.5" stroke-dasharray="9 7" stroke-linecap="round" marker-end="url(#arrow)"/>
+    <rect x="379" y="299" width="140" height="30" rx="15" fill="#16846b"/>
+    <text x="449" y="319" fill="white" font-size="12" font-weight="600" text-anchor="middle">按住 → 拖动 → 松开</text>
+    <text x="40" y="644" fill="#73897b" font-size="12">STREAM POCKET · 安装操作示意，非真实浏览器截图</text>
+    <text x="1160" y="644" fill="#73897b" font-size="12" text-anchor="end">请将 ZIP 拖入内容区域，而非地址栏</text>
+  </g>
+</svg>

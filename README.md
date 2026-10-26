@@ -4,12 +4,22 @@
 
 ## 安装
 
-1. 前往 [Releases 下载最新版](https://github.com/ddvlhr/stream-pocket/releases/latest)，下载 `stream-pocket-版本号.zip` 并解压到固定目录。
+1. 前往 [Releases 下载最新版](https://github.com/ddvlhr/stream-pocket/releases/latest)，下载 Assets 中的 `stream-pocket-版本号.zip`，**无需解压**。
 2. 在 Chrome 地址栏打开 `chrome://extensions`，开启右上角的「开发者模式」。
-3. 点击「加载已解压的扩展程序」，选择解压后直接包含 **`manifest.json`** 的文件夹。
+3. 从文件资源管理器中，将下载好的 **ZIP 压缩包直接拖入扩展管理页面的内容区域**，松开鼠标完成安装。
 4. 将「拾流」固定到工具栏。刷新已打开的网页，播放视频后点击扩展图标。
 
-从源码安装时，选择本项目的 **`extension` 文件夹**。更新版本后，在扩展管理页点击重新加载，再刷新被检测网页。
+**① 打开扩展管理页，开启开发者模式**
+
+![打开 chrome://extensions，开启右上角的开发者模式](assets/install/01-developer-mode.png)
+
+**② 将下载好的 ZIP 直接拖入页面**
+
+![从文件资源管理器将 stream-pocket ZIP 压缩包拖入扩展管理页面，无需解压](assets/install/02-drag-zip.png)
+
+以上为操作示意图，页面样式以浏览器实际显示为准。请拖入 Release 的扩展 ZIP，而不是 GitHub 自动生成的 Source code 压缩包。
+
+从源码安装时，点击「加载已解压的扩展程序」，选择本项目的 **`extension` 文件夹**。若浏览器不接受 ZIP 拖入，也可先解压 Release ZIP，再加载其中直接包含 **`manifest.json`** 的文件夹。修改源码后，在扩展管理页点击重新加载，再刷新被检测网页。
 
 ## 已实现
 

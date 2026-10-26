@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">第一步：开启开发者模式</title>
+  <desc id="desc">在 Chrome 地址栏打开 chrome://extensions，开启扩展管理页面右上角的开发者模式。此图为操作示意，并非真实浏览器截图。</desc>
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#22332f" flood-opacity=".07"/></filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M1 1 8 5 1 9" fill="none" stroke="#16846b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></marker>
+  </defs>
+  <rect width="1200" height="680" rx="20" fill="#f3f7f4"/>
+  <g font-family="Segoe UI,Microsoft YaHei,sans-serif">
+    <rect x="40" y="32" width="42" height="30" rx="9" fill="#16846b"/>
+    <text x="61" y="53" fill="white" font-size="16" font-weight="700" text-anchor="middle">01</text>
+    <text x="96" y="55" fill="#22332f" font-size="24" font-weight="650">打开扩展管理页，开启开发者模式</text>
+    <text x="40" y="88" fill="#677d70" font-size="14">在 Chrome 地址栏输入 chrome://extensions，然后按 Enter。</text>
+    <g filter="url(#shadow)">
+      <rect x="40" y="115" width="1120" height="490" rx="14" fill="white" stroke="#dce5df"/>
+      <path d="M54 115h1092a14 14 0 0 1 14 14v41H40v-41a14 14 0 0 1 14-14" fill="#e9eeea"/>
+      <circle cx="62" cy="139" r="5" fill="#b9c7be"/><circle cx="80" cy="139" r="5" fill="#b9c7be"/><circle cx="98" cy="139" r="5" fill="#b9c7be"/>
+      <rect x="139" y="126" width="835" height="32" rx="16" fill="#f8faf8" stroke="#d4dfd7"/>
+      <text x="158" y="147" fill="#354e3f" font-family="Consolas,monospace" font-size="14">chrome://extensions</text>
+      <path d="M40 231h1120M257 231v374" stroke="#e3e9e4"/>
+      <text x="64" y="208" fill="#344b3d" font-size="21" font-weight="600">扩展程序</text>
+      <rect x="310" y="184" width="447" height="31" rx="8" fill="#f1f4f2"/>
+      <circle cx="329" cy="199" r="5" fill="none" stroke="#83958a" stroke-width="1.5"/><path d="m333 203 4 4" stroke="#83958a" stroke-width="1.5"/>
+      <text x="349" y="205" fill="#829388" font-size="12">搜索扩展程序</text>
+      <rect x="908" y="179" width="230" height="43" rx="10" fill="#eaf7ef" stroke="#16846b" stroke-width="2"/>
+      <text x="927" y="205" fill="#345b47" font-size="14" font-weight="600">开发者模式</text>
+      <rect x="1061" y="191" width="49" height="23" rx="11.5" fill="#16846b"/>
+      <circle cx="1098" cy="202.5" r="8.5" fill="white"/>
+      <rect x="53" y="251" width="190" height="38" rx="19" fill="#e9f4ed"/>
+      <text x="79" y="276" fill="#16846b" font-size="14" font-weight="600">我的扩展程序</text>
+      <text x="79" y="317" fill="#84928a" font-size="13">键盘快捷键</text>
+      <rect x="284" y="250" width="189" height="35" rx="17.5" fill="white" stroke="#d7e1da"/><text x="378" y="272" fill="#536d5d" font-size="12" text-anchor="middle">加载已解压的扩展程序</text>
+      <rect x="487" y="250" width="132" height="35" rx="17.5" fill="white" stroke="#d7e1da"/><text x="553" y="272" fill="#536d5d" font-size="12" text-anchor="middle">打包扩展程序</text>
+      <rect x="633" y="250" width="76" height="35" rx="17.5" fill="white" stroke="#d7e1da"/><text x="671" y="272" fill="#536d5d" font-size="12" text-anchor="middle">更新</text>
+      <rect x="284" y="313" width="839" height="259" rx="12" fill="#fafcfb" stroke="#edf1ee"/>
+      <text x="704" y="449" fill="#a1aea5" font-size="14" text-anchor="middle">扩展程序列表</text>
+      <rect x="799" y="335" width="294" height="94" rx="12" fill="#edf7f1" stroke="#d5e7dc"/>
+      <text x="819" y="367" fill="#16846b" font-size="16" font-weight="600">确认开关已开启</text>
+      <text x="819" y="394" fill="#5e7a68" font-size="13">开启后，就可以拖入 ZIP 安装。</text>
+      <path d="M1038 335c0-36 47-49 47-109" fill="none" stroke="#16846b" stroke-width="2.5" marker-end="url(#arrow)"/>
+    </g>
+    <text x="40" y="644" fill="#73897b" font-size="12">STREAM POCKET · 安装操作示意，非真实浏览器截图</text>
+    <text x="1160" y="644" fill="#73897b" font-size="12" text-anchor="end">下一步：拖入下载好的 ZIP →</text>
+  </g>
+</svg>
